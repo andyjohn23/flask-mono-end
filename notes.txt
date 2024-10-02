@@ -1,0 +1,38 @@
+monolithic vs microservice
+monolithic - tightly coupled
+microservice - 
+
+flask - library/package
+virtual, activate, source <name_of_virtual_env>/bin/activate
+wsgi
+routing, views
+template engine, jinja
+
+if __name__ == '__main__'
+
+Database - data storage
+Types of Databases db.json, sqlite, mongoDB, MySql, NOsql, oracle, microsoft access, postgresql
+sql - structured query language
+
+sqlite3
+creatng new database - sqlite3 <database_name>/.open <database_name>;
+creating new table - CREATE TABLE <table_name>(<columns_name> <column_datatype>);
+insert data to table - INSERT INTO <table_name>(<column_names>) VALUES(<column_values>);
+update data in a table - UPDATE <table_name> SET <column_name> = "<new_value>" WHERE <column_Name> = "<current_column_value>";
+dropping the table/deleting - DROP TABLE <table_name>;
+
+postgresql
+data types - VARCHAR, STRING, BOOLEAN, BLOB/BYTEA(LARGE BINARY OBJECTS), TEXT, UUID
+login as an admin - sudo -i -u postgres
+enter postgresql console - psql
+create new user - CREATE USER <username> WITH PASSWORD '<password_name>';
+view all users - \du
+create new database - CREATE DATABASE <name_of_database>;
+view all databases - \l
+change database ownership - ALTER DATABASE <database_name> OWNER TO <new_owner_name>;
+access individual account and database - psql -U <username> -d <database_name>;
+show tables inside a database - \dt
+create table - CREATE TABLE <table_name>(<columns_name> <column_datatype>);
+
+sqlalchemy - ORM package/library
+app_context()
